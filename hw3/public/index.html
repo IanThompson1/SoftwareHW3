@@ -1,0 +1,125 @@
+<!-- Ian Thompson -->
+
+<!-- CSS -->
+<head>
+    <link rel="stylesheet" media="screen" href="/stylesheets/style.css">
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+    </script>
+</head>
+
+
+<!-- title -->
+<body>
+    <h1>Cheesecake Order Form</h1>
+
+<!-- cheescake image -->
+<img width="20%" height="20%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/1200px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg?20171018065901" alt="Cheescake">
+
+<!-- forms with a green background -->
+<div class="forms">
+<h3 id="numtxt">Quantity Topping</h3>
+<!-- code for submitted order -->
+<h4 id="orderText"></h4>
+<h5 id="orderNotes"></h5>
+
+    <select class="" name="quant" id="quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+
+    <form class="" id="topping">
+        <br>
+        <input type="radio" id="Plain" name="Topping" value="Plain">
+        <label for="Plain">Plain</label><br>
+        <input type="radio" id="Cherry" name="Topping" value="Cherry">
+        <label for="Cherry">Cherry</label><br>
+        <input type="radio" id="Chocolate" name="Topping" value="Chocolate">
+        <label for="Chocolate">Chocolate</label><br>
+    </form>
+</div>
+<!-- notes box -->
+    <h3 id="warning" class="warning">warning! Cheesecake contains Dairy!</h3>
+    <h3 id="notetxt">Notes:</h3>
+    <textarea id="notes"></textarea>
+    <div>
+        <br>
+        <!-- button for submitting the order -->
+        <button id="orderbutton">
+            Order
+        </button>
+    </div>
+
+<h2>
+    Total Orders Last Month
+</h2>   
+</body>
+<!-- displays the total number of orders last month and updates if using a script -->
+<ul class="list">
+    <li><span class="italic" type="text" id="numplain" value="1"></span>Plain</li>
+    <li><span class="italic" type="text" id="numcherry" value="1"></span>Cherry</li>
+    <li><span class="italic" type="text" id="numchocolate" value="1"></span>Chocolate</li>
+</ul>
+
+<script src="./javascripts/main.js"></script>
+<script src="./javascripts/mainButton.js"></script>
+<script src="./javascripts/plain.js"></script>
+<script src="./javascripts/cherry.js"></script>
+<script src="./javascripts/chocolate.js"></script>
+<script src="./javascripts/sum.js"></script>
+
+
+
+
+
+<!-- <script>
+    var numplain = document.getElementById("numplain");
+    var numcherry = document.getElementById("numcherry");
+    var numchocolate = document.getElementById("numchocolate");
+    var button = document.getElementById("orderbutton");
+    var numselected = document.getElementById("quantity");
+    var plain = document.getElementById("Plain");
+    var cherry = document.getElementById("Cherry");
+    var chocolate = document.getElementById("Chocolate");
+    numplain.innerHTML = 0;
+    numcherry.innerHTML = 0;
+    numchocolate.innerHTML = 0;
+    var selected = 0;
+    var total = 0;
+
+    plain.addEventListener('click', function () {
+        selected = 1;
+    });
+    cherry.addEventListener('click', function () {
+        selected = 2;
+    });
+    chocolate.addEventListener('click', function () {
+        selected = 3;
+    });
+    button.addEventListener('click', function () {
+        switch(selected){
+            case 0:
+                break;
+            case 1:
+                total = parseInt(numplain.innerHTML) + parseInt(numselected.value);
+                numplain.innerHTML = total;
+                break;
+            case 2:
+                total = parseInt(numcherry.innerHTML) + parseInt(numselected.value);
+                numcherry.innerHTML = total;
+                break;
+            case 3:
+                total = parseInt(numchocolate.innerHTML) + parseInt(numselected.value);
+                numchocolate.innerHTML = total;
+                break;
+        }
+    });
+</script> -->

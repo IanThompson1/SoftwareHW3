@@ -1,0 +1,26 @@
+/* Ian Thompson */
+body {
+    margin: 0;
+    background: rgb(219, 133, 4);
+    text-align: center;
+	font: 100% georgia, sans-serif;
+}
+h1 {
+    font: bold;
+    font-size: xx-large;
+    color: blue;
+}
+.forms {
+    background:rgb(4, 219, 22);
+}
+.italic {
+    font: italic normal 1.4em verdana;
+}
+.list {
+    display: inline-block;
+
+}
+.warning {
+    color: red;
+    background-color: blue;
+}
