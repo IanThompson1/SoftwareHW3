@@ -1,3 +1,5 @@
+//Ian Thompson
+
 //html elements
 var Orderbutton = document.getElementById("orderbutton");
 var note = document.getElementById("notes");
