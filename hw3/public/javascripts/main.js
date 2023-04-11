@@ -1,5 +1,5 @@
 //html elements
-var button = document.getElementById("orderbutton");
+var Orderbutton = document.getElementById("orderbutton");
 var note = document.getElementById("notes");
 var warning = document.getElementById("warning");
 var numselected = document.getElementById("quantity");
@@ -14,6 +14,19 @@ var numcherry = document.getElementById("numcherry");
 var numchocolate = document.getElementById("numchocolate");
 var orderText = document.getElementById("orderText");
 var orderNotes = document.getElementById("orderNotes");
+var monthButton = document.getElementById("month");
+var Jan = document.getElementById("Jan");
+var Feb = document.getElementById("Feb");
+var Mar = document.getElementById("Mar");
+var Apr = document.getElementById("Apr");
+var May = document.getElementById("May");
+var Jun = document.getElementById("Jun");
+var Jul = document.getElementById("Jul");
+var Aug = document.getElementById("Aug");
+var Sep = document.getElementById("Sep");
+var Oct = document.getElementById("Oct");
+var Nov = document.getElementById("Nov");
+var Dec = document.getElementById("Dec");
 var selected = 0;
 
 //remove warning initially
@@ -31,7 +44,7 @@ function sendOrder(){
     plain.style.display="none";
     cherry.style.display="none";
     chocolate.style.display="none";
-    button.style.display="none";
+    Orderbutton.style.display="none";
     toppings.style.display="none";
     note.style.display="none";
     warning.style.display="none";
